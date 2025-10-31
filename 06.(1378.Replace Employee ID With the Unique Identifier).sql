@@ -68,7 +68,6 @@ The unique ID of Jonathan is 1.
 
 Solution:
 
-select p.product_name, s.year, s.price
-from sales as s
-left join product as p
-on p.product_id = p.product_id
+select eu.unique_id,e.name from employees e
+left join employeeuni as eu
+on e.id = eu.id;
